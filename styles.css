@@ -303,7 +303,17 @@ body {
     text-align: center;
   }
 
-  .about-photo img {
-    width: 60%; /* smaller and centered on mobile */
-  }
+  .about-photo {
+  display: flex;
+  justify-content: center; /* centers the image horizontally in its column */
+  align-items: center;     /* centers vertically if needed */
+  flex: 1;
+}
+
+.about-photo img {
+  width: 240px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 }
