@@ -276,3 +276,34 @@ body {
   max-width: 750px;      /* optional: keeps lines from being too long */
 }
 
+/* Flex layout for About section */
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* spacing between photo and text */
+}
+
+/* Left image styling */
+.about-photo img {
+  width: 240px;        /* adjust size as you prefer */
+  border-radius: 10px; /* optional: softened corners */
+  object-fit: cover;
+}
+
+/* Text block */
+.about-text {
+  max-width: 700px; /* keeps text readable */
+  line-height: 1.6;
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 800px) {
+  .about-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo img {
+    width: 60%; /* smaller and centered on mobile */
+  }
+}
