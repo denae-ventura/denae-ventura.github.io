@@ -264,4 +264,15 @@ body {
     height: 150px;
   }
 }
+/* Publications list spacing */
+.pub-list {
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  padding-left: 1.2rem; /* keeps numbering aligned nicely */
+}
+
+.pub-list li {
+  margin-bottom: 1.2rem; /* space between items */
+  max-width: 750px;      /* optional: keeps lines from being too long */
+}
 
